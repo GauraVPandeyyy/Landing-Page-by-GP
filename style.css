@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite GB S", cursive;
+    font-size: 0.9rem;
+    /* font-optical-sizing: auto; */
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #FF3800;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+}
+
+.logo i {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 6%;
+    border-radius: 50%;
+    background-color: #FF3800;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
+.right-nav i {
+    /* font-size: 0.9rem; */
+    font-weight: 800;
+    padding: 15%;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+/* 
+text */
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(./asset/model1.png);
+    background-repeat: no-repeat;
+    /* background-color: #C2C2C2; */
+    background-size: cover;
+    background-position: 35% 50%;
+    color: #c2c2c2;
+}
+
+nav {
+    padding: 4% 9% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#overlay {
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    padding: 4% 5%;
+}
+
+.text h1 {
+    font-size: 6vw;
+}
+
+.right-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-text p {
+    width: 25%;
+}
+
+.right-text i {
+    font-size: 1.1rem;
+    margin: 3px;
+}
+
+
+/* bottom */
+.bottom {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+
+.box {
+    width: 25%;
+    min-height: inherit;
+}
+
+.box1 {
+    padding: 6vh 0 5vh 8vh;
+}
+
+.box1 h5 {
+    font-size: 1.2rem;
+    color: #847f7f;
+    margin-bottom: 2vh;
+}
+
+.box1 p {
+    font-size: 1.2rem;
+    color: #6f6e6e;
+    width: 50%;
+    font-stretch: 1.5rem;
+}
+
+.box2 {
+    background-image: url(./asset/flying.jpg);
+    background-size: cover;
+    background-position: 35% 50%;
+
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+/* box 3 */
+.top-part {
+    width: 100%;
+    min-height: 20vh;
+    background-color: #ff3700e4;
+    padding: 20px 40px;
+}
+
+.lower-part {
+    width: 100%;
+    min-height: 20vh;
+}
+
+.top-part h4 {
+    margin-bottom: 15px;
+}
+
+.lower-part {
+    /* background-image: url(./asset/backiee-265881.jpg); */
+    /* -webkit-backdrop-filter: blur(5px);
+    backdrop-filter:blur(5px); */
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url(https://media.istockphoto.com/id/493629316/photo/yellow-ink-in-water.jpg?s=612x612&w=0&k=20&c=8VEKQuNy9jP1shht4v4FpPLC6jpoOyvqYmNahoju6eE=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.lower-part a {
+    /* background-color: #f32525a2; */
+    /* padding: 1rem 1.5rem; */
+    /* border-radius: 30%; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* box 4 */
+.box4 {
+    padding: 20px 30px;
+    background-color: rgba(28, 27, 27, 0.938);
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.Part2nd {
+    display: flex;
+    margin: 20px 0;
+}
+
+.img-section {
+    margin-right: 20px;
+}
+
+.img-section img {
+    height: 50px;
+}
+
+.about p {
+    font-size: 0.9rem;
+
+}
+
+.time {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #6f6e6e;
+}
+
+@media(max-width: 500px) {
+
+    /* .top{
+        height: 80%;
+    } */
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+        /* min-width: 100vw; */
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .right-text {
+        flex-direction: column;
+        align-items: flex-start;
+        /* width: 100%; */
+        row-gap: 5px;
+    }
+
+    .right-text p {
+        width: initial;
+    }
+
+    .bottom {
+        flex-direction: column;
+        min-height: 20vh;
+
+    }
+
+    .box {
+        width: 100%;
+
+    }
+    .box1{
+        min-height: 10vh;
+    }
+
+    .box2 {
+        min-height: 50vh;
+    }
+    .box3{
+        /* min-height: 40vh; */
+        flex-direction: column;
+    }
+    .box3 .lower-part{
+        min-height: 40vh;
+    }
+
+}
